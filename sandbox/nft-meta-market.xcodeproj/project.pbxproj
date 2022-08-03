@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0C37E719289AE10300FB7918 /* GLTFSceneKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0C37E718289AE10300FB7918 /* GLTFSceneKit */; };
+		0C37E71C289AE79C00FB7918 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 0C37E71B289AE79C00FB7918 /* Apollo */; };
 		0C4AC51C289A22B600373378 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4AC51B289A22B600373378 /* UnityFramework.framework */; };
 		0C4AC51E289A23EC00373378 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4AC51B289A22B600373378 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0CB93FB2289A33DE00E21369 /* ModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB93FB1289A33DE00E21369 /* ModelView.swift */; };
 		0CB93FB4289A358E00E21369 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB93FB3289A358E00E21369 /* GameViewController.swift */; };
 		0CB93FB6289A377400E21369 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB93FB5289A377400E21369 /* Game.storyboard */; };
 		E61361FC25BA3CFA0005B57A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61361FB25BA3CFA0005B57A /* LaunchScreen.storyboard */; };
@@ -39,7 +39,6 @@
 
 /* Begin PBXFileReference section */
 		0C4AC51B289A22B600373378 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CB93FB1289A33DE00E21369 /* ModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelView.swift; sourceTree = "<group>"; };
 		0CB93FB3289A358E00E21369 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		0CB93FB5289A377400E21369 /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
 		0CB93FB9289A3A5700E21369 /* guitar.glb */ = {isa = PBXFileReference; lastKnownFileType = file; path = guitar.glb; sourceTree = "<group>"; };
@@ -61,6 +60,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C4AC51C289A22B600373378 /* UnityFramework.framework in Frameworks */,
+				0C37E71C289AE79C00FB7918 /* Apollo in Frameworks */,
 				0C37E719289AE10300FB7918 /* GLTFSceneKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +68,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C37E71D289AEB8900FB7918 /* ModelScene */ = {
+			isa = PBXGroup;
+			children = (
+				0CB93FB5289A377400E21369 /* Game.storyboard */,
+				0CB93FB3289A358E00E21369 /* GameViewController.swift */,
+			);
+			path = ModelScene;
+			sourceTree = "<group>";
+		};
+		0C37E71E289AEBB100FB7918 /* UnityScene */ = {
+			isa = PBXGroup;
+			children = (
+				E61361FD25BA3D150005B57A /* UnityBridge.swift */,
+			);
+			path = UnityScene;
+			sourceTree = "<group>";
+		};
+		0C37E71F289AEBC700FB7918 /* UIHelper */ = {
+			isa = PBXGroup;
+			children = (
+				E62A7AD32773F6AC007CE3D6 /* UIWindowCustom.swift */,
+			);
+			path = UIHelper;
+			sourceTree = "<group>";
+		};
 		E61361F525BA3AB40005B57A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,19 +121,17 @@
 		E6DE818325BA36230019BED1 /* nft-meta-market */ = {
 			isa = PBXGroup;
 			children = (
+				0C37E71F289AEBC700FB7918 /* UIHelper */,
+				0C37E71E289AEBB100FB7918 /* UnityScene */,
+				0C37E71D289AEB8900FB7918 /* ModelScene */,
 				0CB93FB9289A3A5700E21369 /* guitar.glb */,
 				E61361FB25BA3CFA0005B57A /* LaunchScreen.storyboard */,
-				0CB93FB5289A377400E21369 /* Game.storyboard */,
-				0CB93FB1289A33DE00E21369 /* ModelView.swift */,
 				E6DE818625BA36230019BED1 /* ContentView.swift */,
-				E61361FD25BA3D150005B57A /* UnityBridge.swift */,
 				E6DE818825BA36240019BED1 /* Assets.xcassets */,
 				E6DE818D25BA36240019BED1 /* Info.plist */,
 				E6DE818A25BA36240019BED1 /* Preview Content */,
 				E62A7ACD2773E48A007CE3D6 /* AppDelegate.swift */,
 				E62A7ACF2773E4DA007CE3D6 /* SceneDelegate.swift */,
-				E62A7AD32773F6AC007CE3D6 /* UIWindowCustom.swift */,
-				0CB93FB3289A358E00E21369 /* GameViewController.swift */,
 			);
 			path = "nft-meta-market";
 			sourceTree = "<group>";
@@ -140,6 +163,7 @@
 			name = "nft-meta-market";
 			packageProductDependencies = (
 				0C37E718289AE10300FB7918 /* GLTFSceneKit */,
+				0C37E71B289AE79C00FB7918 /* Apollo */,
 			);
 			productName = sandbox;
 			productReference = E6DE818125BA36230019BED1 /* nft-meta-market.app */;
@@ -170,6 +194,7 @@
 			mainGroup = E6DE817825BA36230019BED1;
 			packageReferences = (
 				0CD70C32289ADEC600EB16D4 /* XCRemoteSwiftPackageReference "GLTFSceneKit" */,
+				0C37E71A289AE79C00FB7918 /* XCRemoteSwiftPackageReference "apollo-ios" */,
 			);
 			productRefGroup = E6DE818225BA36230019BED1 /* Products */;
 			projectDirPath = "";
@@ -200,7 +225,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CB93FB4289A358E00E21369 /* GameViewController.swift in Sources */,
-				0CB93FB2289A33DE00E21369 /* ModelView.swift in Sources */,
 				E62A7AD02773E4DA007CE3D6 /* SceneDelegate.swift in Sources */,
 				E62A7AD42773F6AC007CE3D6 /* UIWindowCustom.swift in Sources */,
 				E62A7ACE2773E48A007CE3D6 /* AppDelegate.swift in Sources */,
@@ -398,6 +422,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0C37E71A289AE79C00FB7918 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.5;
+			};
+		};
 		0CD70C32289ADEC600EB16D4 /* XCRemoteSwiftPackageReference "GLTFSceneKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/magicien/GLTFSceneKit";
@@ -413,6 +445,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0CD70C32289ADEC600EB16D4 /* XCRemoteSwiftPackageReference "GLTFSceneKit" */;
 			productName = GLTFSceneKit;
+		};
+		0C37E71B289AE79C00FB7918 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C37E71A289AE79C00FB7918 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
