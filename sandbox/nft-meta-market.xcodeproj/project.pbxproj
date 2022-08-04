@@ -13,6 +13,7 @@
 		0C4AC51E289A23EC00373378 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4AC51B289A22B600373378 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0CB93FB4289A358E00E21369 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB93FB3289A358E00E21369 /* GameViewController.swift */; };
 		0CB93FB6289A377400E21369 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB93FB5289A377400E21369 /* Game.storyboard */; };
+		0CF20F91289C228600D34A92 /* queries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 0CF20F90289C228600D34A92 /* queries.graphql */; };
 		E61361FC25BA3CFA0005B57A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61361FB25BA3CFA0005B57A /* LaunchScreen.storyboard */; };
 		E61361FE25BA3D150005B57A /* UnityBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61361FD25BA3D150005B57A /* UnityBridge.swift */; };
 		E62A7ACE2773E48A007CE3D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62A7ACD2773E48A007CE3D6 /* AppDelegate.swift */; };
@@ -42,6 +43,7 @@
 		0CB93FB3289A358E00E21369 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		0CB93FB5289A377400E21369 /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
 		0CB93FB9289A3A5700E21369 /* guitar.glb */ = {isa = PBXFileReference; lastKnownFileType = file; path = guitar.glb; sourceTree = "<group>"; };
+		0CF20F90289C228600D34A92 /* queries.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = queries.graphql; sourceTree = "<group>"; };
 		E61361FB25BA3CFA0005B57A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E61361FD25BA3D150005B57A /* UnityBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnityBridge.swift; sourceTree = "<group>"; };
 		E62A7ACD2773E48A007CE3D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				E6DE818A25BA36240019BED1 /* Preview Content */,
 				E62A7ACD2773E48A007CE3D6 /* AppDelegate.swift */,
 				E62A7ACF2773E4DA007CE3D6 /* SceneDelegate.swift */,
+				0CF20F90289C228600D34A92 /* queries.graphql */,
 			);
 			path = "nft-meta-market";
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				E61361FC25BA3CFA0005B57A /* LaunchScreen.storyboard in Resources */,
 				E6DE818C25BA36240019BED1 /* Preview Assets.xcassets in Resources */,
 				E6DE818925BA36240019BED1 /* Assets.xcassets in Resources */,
+				0CF20F91289C228600D34A92 /* queries.graphql in Resources */,
 				0CB93FB6289A377400E21369 /* Game.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

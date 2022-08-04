@@ -13,6 +13,7 @@ import GLTFSceneKit
 class GameViewController: UIViewController {
     
     let sampleModel = "https://arweave.net/v_mLILVhfJBimh7bLFneRJZdrRE1eYCJWazOppDh_RQ"
+    let sample2 = "https://arweave.net/xNDPa-0hfklEpieidttRLHC7TP2BEdOmKmd5P4iNcgA"
     
     var gameView: SCNView? {
         get { return self.view as? SCNView }
@@ -24,7 +25,7 @@ class GameViewController: UIViewController {
         
         var scene: SCNScene
         do {
-            let sceneSource = try GLTFSceneSource(url: URL(string: sampleModel)!)
+            let sceneSource = try GLTFSceneSource(url: URL(string: sample2)!)
             scene = try sceneSource.scene()
         } catch {
             print("\(error.localizedDescription)")
