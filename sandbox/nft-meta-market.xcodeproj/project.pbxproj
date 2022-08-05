@@ -11,9 +11,31 @@
 		0C37E71C289AE79C00FB7918 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 0C37E71B289AE79C00FB7918 /* Apollo */; };
 		0C4AC51C289A22B600373378 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4AC51B289A22B600373378 /* UnityFramework.framework */; };
 		0C4AC51E289A23EC00373378 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4AC51B289A22B600373378 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0C848C7E289C9ACF00A61AC8 /* NFTStorageNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C848C7D289C9ACF00A61AC8 /* NFTStorageNetwork.swift */; };
+		0C848C81289CB90D00A61AC8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0C848C80289CB90D00A61AC8 /* Alamofire */; };
+		0C848C83289CB9FD00A61AC8 /* MSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C848C82289CB9FD00A61AC8 /* MSelectorView.swift */; };
+		0C848C85289CBA4D00A61AC8 /* MZoraSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C848C84289CBA4D00A61AC8 /* MZoraSearchView.swift */; };
+		0C848C87289CBA6300A61AC8 /* MNFTupSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C848C86289CBA6300A61AC8 /* MNFTupSearchView.swift */; };
+		0C848C89289CBD4D00A61AC8 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C848C88289CBD4D00A61AC8 /* GameModel.swift */; };
+		0C848C8B289CBD6700A61AC8 /* ZoraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C848C8A289CBD6700A61AC8 /* ZoraModel.swift */; };
+		0C848C8D289CBD7600A61AC8 /* NFTupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C848C8C289CBD7600A61AC8 /* NFTupModel.swift */; };
+		0C848C8F289CBFE400A61AC8 /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C848C8E289CBFE400A61AC8 /* CustomViews.swift */; };
+		0C848C91289CC07A00A61AC8 /* CustomExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C848C90289CC07A00A61AC8 /* CustomExtensions.swift */; };
+		0C848C93289CC95300A61AC8 /* MZoraSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C848C92289CC95300A61AC8 /* MZoraSearchViewModel.swift */; };
+		0C848C97289CCB2400A61AC8 /* MZoraRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C848C96289CCB2400A61AC8 /* MZoraRowView.swift */; };
+		0C848C9A289CCC0800A61AC8 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0C848C99289CCC0800A61AC8 /* SDWebImage */; };
 		0CB93FB4289A358E00E21369 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB93FB3289A358E00E21369 /* GameViewController.swift */; };
 		0CB93FB6289A377400E21369 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB93FB5289A377400E21369 /* Game.storyboard */; };
-		0CF20F91289C228600D34A92 /* queries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 0CF20F90289C228600D34A92 /* queries.graphql */; };
+		0CF20F93289C2F4400D34A92 /* queries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 0CF20F92289C2F4400D34A92 /* queries.graphql */; };
+		0CF20F95289C2FEB00D34A92 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CF20F94289C2FEA00D34A92 /* schema.json */; };
+		0CF20F98289C31D700D34A92 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF20F97289C31D700D34A92 /* API.swift */; };
+		0CF20F9B289C321F00D34A92 /* ZONetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF20F9A289C321F00D34A92 /* ZONetwork.swift */; };
+		0CF20F9E289C32C400D34A92 /* ModelHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF20F9D289C32C400D34A92 /* ModelHelpers.swift */; };
+		0CF20FA0289C333000D34A92 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF20F9F289C333000D34A92 /* DataManager.swift */; };
+		0CF20FA2289C340500D34A92 /* ViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF20FA1289C340500D34A92 /* ViewCoordinator.swift */; };
+		0CF20FA4289C342100D34A92 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF20FA3289C342100D34A92 /* GameViewModel.swift */; };
+		0CF20FA9289C354500D34A92 /* MarketplaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF20FA8289C354500D34A92 /* MarketplaceView.swift */; };
+		0CF20FAB289C354E00D34A92 /* MarketplaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF20FAA289C354E00D34A92 /* MarketplaceViewModel.swift */; };
 		E61361FC25BA3CFA0005B57A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61361FB25BA3CFA0005B57A /* LaunchScreen.storyboard */; };
 		E61361FE25BA3D150005B57A /* UnityBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61361FD25BA3D150005B57A /* UnityBridge.swift */; };
 		E62A7ACE2773E48A007CE3D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62A7ACD2773E48A007CE3D6 /* AppDelegate.swift */; };
@@ -40,10 +62,30 @@
 
 /* Begin PBXFileReference section */
 		0C4AC51B289A22B600373378 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C848C7D289C9ACF00A61AC8 /* NFTStorageNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTStorageNetwork.swift; sourceTree = "<group>"; };
+		0C848C82289CB9FD00A61AC8 /* MSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSelectorView.swift; sourceTree = "<group>"; };
+		0C848C84289CBA4D00A61AC8 /* MZoraSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZoraSearchView.swift; sourceTree = "<group>"; };
+		0C848C86289CBA6300A61AC8 /* MNFTupSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNFTupSearchView.swift; sourceTree = "<group>"; };
+		0C848C88289CBD4D00A61AC8 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		0C848C8A289CBD6700A61AC8 /* ZoraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoraModel.swift; sourceTree = "<group>"; };
+		0C848C8C289CBD7600A61AC8 /* NFTupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTupModel.swift; sourceTree = "<group>"; };
+		0C848C8E289CBFE400A61AC8 /* CustomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
+		0C848C90289CC07A00A61AC8 /* CustomExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomExtensions.swift; sourceTree = "<group>"; };
+		0C848C92289CC95300A61AC8 /* MZoraSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZoraSearchViewModel.swift; sourceTree = "<group>"; };
+		0C848C96289CCB2400A61AC8 /* MZoraRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZoraRowView.swift; sourceTree = "<group>"; };
 		0CB93FB3289A358E00E21369 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		0CB93FB5289A377400E21369 /* Game.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Game.storyboard; sourceTree = "<group>"; };
 		0CB93FB9289A3A5700E21369 /* guitar.glb */ = {isa = PBXFileReference; lastKnownFileType = file; path = guitar.glb; sourceTree = "<group>"; };
-		0CF20F90289C228600D34A92 /* queries.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = queries.graphql; sourceTree = "<group>"; };
+		0CF20F92289C2F4400D34A92 /* queries.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = queries.graphql; sourceTree = "<group>"; };
+		0CF20F94289C2FEA00D34A92 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		0CF20F97289C31D700D34A92 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		0CF20F9A289C321F00D34A92 /* ZONetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZONetwork.swift; sourceTree = "<group>"; };
+		0CF20F9D289C32C400D34A92 /* ModelHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelHelpers.swift; sourceTree = "<group>"; };
+		0CF20F9F289C333000D34A92 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		0CF20FA1289C340500D34A92 /* ViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoordinator.swift; sourceTree = "<group>"; };
+		0CF20FA3289C342100D34A92 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		0CF20FA8289C354500D34A92 /* MarketplaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketplaceView.swift; sourceTree = "<group>"; };
+		0CF20FAA289C354E00D34A92 /* MarketplaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketplaceViewModel.swift; sourceTree = "<group>"; };
 		E61361FB25BA3CFA0005B57A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E61361FD25BA3D150005B57A /* UnityBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnityBridge.swift; sourceTree = "<group>"; };
 		E62A7ACD2773E48A007CE3D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,8 +104,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C4AC51C289A22B600373378 /* UnityFramework.framework in Frameworks */,
+				0C848C81289CB90D00A61AC8 /* Alamofire in Frameworks */,
 				0C37E71C289AE79C00FB7918 /* Apollo in Frameworks */,
 				0C37E719289AE10300FB7918 /* GLTFSceneKit in Frameworks */,
+				0C848C9A289CCC0800A61AC8 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +119,7 @@
 			children = (
 				0CB93FB5289A377400E21369 /* Game.storyboard */,
 				0CB93FB3289A358E00E21369 /* GameViewController.swift */,
+				0CF20FA3289C342100D34A92 /* GameViewModel.swift */,
 			);
 			path = ModelScene;
 			sourceTree = "<group>";
@@ -90,9 +135,63 @@
 		0C37E71F289AEBC700FB7918 /* UIHelper */ = {
 			isa = PBXGroup;
 			children = (
+				0CF20FA1289C340500D34A92 /* ViewCoordinator.swift */,
 				E62A7AD32773F6AC007CE3D6 /* UIWindowCustom.swift */,
+				0C848C8E289CBFE400A61AC8 /* CustomViews.swift */,
+				0C848C90289CC07A00A61AC8 /* CustomExtensions.swift */,
 			);
 			path = UIHelper;
+			sourceTree = "<group>";
+		};
+		0C848C94289CC96000A61AC8 /* Zora */ = {
+			isa = PBXGroup;
+			children = (
+				0C848C84289CBA4D00A61AC8 /* MZoraSearchView.swift */,
+				0C848C92289CC95300A61AC8 /* MZoraSearchViewModel.swift */,
+				0C848C96289CCB2400A61AC8 /* MZoraRowView.swift */,
+			);
+			path = Zora;
+			sourceTree = "<group>";
+		};
+		0C848C95289CC96500A61AC8 /* NFTup */ = {
+			isa = PBXGroup;
+			children = (
+				0C848C86289CBA6300A61AC8 /* MNFTupSearchView.swift */,
+			);
+			path = NFTup;
+			sourceTree = "<group>";
+		};
+		0CF20F99289C320E00D34A92 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0CF20F9A289C321F00D34A92 /* ZONetwork.swift */,
+				0C848C7D289C9ACF00A61AC8 /* NFTStorageNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0CF20F9C289C32AF00D34A92 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0CF20F9F289C333000D34A92 /* DataManager.swift */,
+				0CF20F9D289C32C400D34A92 /* ModelHelpers.swift */,
+				0C848C88289CBD4D00A61AC8 /* GameModel.swift */,
+				0C848C8A289CBD6700A61AC8 /* ZoraModel.swift */,
+				0C848C8C289CBD7600A61AC8 /* NFTupModel.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0CF20FA5289C351700D34A92 /* Marketplace */ = {
+			isa = PBXGroup;
+			children = (
+				0C848C95289CC96500A61AC8 /* NFTup */,
+				0C848C94289CC96000A61AC8 /* Zora */,
+				0CF20FA8289C354500D34A92 /* MarketplaceView.swift */,
+				0C848C82289CB9FD00A61AC8 /* MSelectorView.swift */,
+				0CF20FAA289C354E00D34A92 /* MarketplaceViewModel.swift */,
+			);
+			path = Marketplace;
 			sourceTree = "<group>";
 		};
 		E61361F525BA3AB40005B57A /* Frameworks */ = {
@@ -123,18 +222,23 @@
 		E6DE818325BA36230019BED1 /* nft-meta-market */ = {
 			isa = PBXGroup;
 			children = (
-				0C37E71F289AEBC700FB7918 /* UIHelper */,
-				0C37E71E289AEBB100FB7918 /* UnityScene */,
-				0C37E71D289AEB8900FB7918 /* ModelScene */,
-				0CB93FB9289A3A5700E21369 /* guitar.glb */,
 				E61361FB25BA3CFA0005B57A /* LaunchScreen.storyboard */,
-				E6DE818625BA36230019BED1 /* ContentView.swift */,
-				E6DE818825BA36240019BED1 /* Assets.xcassets */,
-				E6DE818D25BA36240019BED1 /* Info.plist */,
-				E6DE818A25BA36240019BED1 /* Preview Content */,
 				E62A7ACD2773E48A007CE3D6 /* AppDelegate.swift */,
 				E62A7ACF2773E4DA007CE3D6 /* SceneDelegate.swift */,
-				0CF20F90289C228600D34A92 /* queries.graphql */,
+				E6DE818625BA36230019BED1 /* ContentView.swift */,
+				0C37E71F289AEBC700FB7918 /* UIHelper */,
+				0CF20FA5289C351700D34A92 /* Marketplace */,
+				0CF20F9C289C32AF00D34A92 /* Data */,
+				0CF20F99289C320E00D34A92 /* Network */,
+				0CF20F97289C31D700D34A92 /* API.swift */,
+				0CF20F94289C2FEA00D34A92 /* schema.json */,
+				0CF20F92289C2F4400D34A92 /* queries.graphql */,
+				0C37E71E289AEBB100FB7918 /* UnityScene */,
+				0C37E71D289AEB8900FB7918 /* ModelScene */,
+				E6DE818825BA36240019BED1 /* Assets.xcassets */,
+				0CB93FB9289A3A5700E21369 /* guitar.glb */,
+				E6DE818D25BA36240019BED1 /* Info.plist */,
+				E6DE818A25BA36240019BED1 /* Preview Content */,
 			);
 			path = "nft-meta-market";
 			sourceTree = "<group>";
@@ -154,6 +258,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6DE819025BA36240019BED1 /* Build configuration list for PBXNativeTarget "nft-meta-market" */;
 			buildPhases = (
+				0CF20F96289C30BC00D34A92 /* Generate Apollo GraphQL API */,
 				E6DE817D25BA36230019BED1 /* Sources */,
 				E6DE817E25BA36230019BED1 /* Frameworks */,
 				E6DE817F25BA36230019BED1 /* Resources */,
@@ -167,6 +272,8 @@
 			packageProductDependencies = (
 				0C37E718289AE10300FB7918 /* GLTFSceneKit */,
 				0C37E71B289AE79C00FB7918 /* Apollo */,
+				0C848C80289CB90D00A61AC8 /* Alamofire */,
+				0C848C99289CCC0800A61AC8 /* SDWebImage */,
 			);
 			productName = sandbox;
 			productReference = E6DE818125BA36230019BED1 /* nft-meta-market.app */;
@@ -198,6 +305,8 @@
 			packageReferences = (
 				0CD70C32289ADEC600EB16D4 /* XCRemoteSwiftPackageReference "GLTFSceneKit" */,
 				0C37E71A289AE79C00FB7918 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				0C848C7F289CB90C00A61AC8 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				0C848C98289CCC0800A61AC8 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = E6DE818225BA36230019BED1 /* Products */;
 			projectDirPath = "";
@@ -213,27 +322,68 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CF20F93289C2F4400D34A92 /* queries.graphql in Resources */,
 				E61361FC25BA3CFA0005B57A /* LaunchScreen.storyboard in Resources */,
 				E6DE818C25BA36240019BED1 /* Preview Assets.xcassets in Resources */,
 				E6DE818925BA36240019BED1 /* Assets.xcassets in Resources */,
-				0CF20F91289C228600D34A92 /* queries.graphql in Resources */,
+				0CF20F95289C2FEB00D34A92 /* schema.json in Resources */,
 				0CB93FB6289A377400E21369 /* Game.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0CF20F96289C30BC00D34A92 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\n# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --passthroughCustomScalars --localSchemaFile=\"schema.json\" API.swift\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E6DE817D25BA36230019BED1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CF20FA4289C342100D34A92 /* GameViewModel.swift in Sources */,
+				0CF20FA9289C354500D34A92 /* MarketplaceView.swift in Sources */,
+				0C848C91289CC07A00A61AC8 /* CustomExtensions.swift in Sources */,
+				0C848C85289CBA4D00A61AC8 /* MZoraSearchView.swift in Sources */,
+				0CF20FA2289C340500D34A92 /* ViewCoordinator.swift in Sources */,
 				0CB93FB4289A358E00E21369 /* GameViewController.swift in Sources */,
+				0CF20FA0289C333000D34A92 /* DataManager.swift in Sources */,
 				E62A7AD02773E4DA007CE3D6 /* SceneDelegate.swift in Sources */,
 				E62A7AD42773F6AC007CE3D6 /* UIWindowCustom.swift in Sources */,
 				E62A7ACE2773E48A007CE3D6 /* AppDelegate.swift in Sources */,
+				0C848C8F289CBFE400A61AC8 /* CustomViews.swift in Sources */,
+				0C848C7E289C9ACF00A61AC8 /* NFTStorageNetwork.swift in Sources */,
+				0C848C89289CBD4D00A61AC8 /* GameModel.swift in Sources */,
+				0C848C8D289CBD7600A61AC8 /* NFTupModel.swift in Sources */,
+				0CF20F9E289C32C400D34A92 /* ModelHelpers.swift in Sources */,
 				E6DE818725BA36230019BED1 /* ContentView.swift in Sources */,
+				0C848C93289CC95300A61AC8 /* MZoraSearchViewModel.swift in Sources */,
+				0CF20FAB289C354E00D34A92 /* MarketplaceViewModel.swift in Sources */,
+				0C848C83289CB9FD00A61AC8 /* MSelectorView.swift in Sources */,
+				0C848C97289CCB2400A61AC8 /* MZoraRowView.swift in Sources */,
+				0CF20F9B289C321F00D34A92 /* ZONetwork.swift in Sources */,
+				0C848C87289CBA6300A61AC8 /* MNFTupSearchView.swift in Sources */,
 				E61361FE25BA3D150005B57A /* UnityBridge.swift in Sources */,
+				0CF20F98289C31D700D34A92 /* API.swift in Sources */,
+				0C848C8B289CBD6700A61AC8 /* ZoraModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +584,22 @@
 				minimumVersion = 0.9.5;
 			};
 		};
+		0C848C7F289CB90C00A61AC8 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.1;
+			};
+		};
+		0C848C98289CCC0800A61AC8 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		0CD70C32289ADEC600EB16D4 /* XCRemoteSwiftPackageReference "GLTFSceneKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/magicien/GLTFSceneKit";
@@ -454,6 +620,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0C37E71A289AE79C00FB7918 /* XCRemoteSwiftPackageReference "apollo-ios" */;
 			productName = Apollo;
+		};
+		0C848C80289CB90D00A61AC8 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C848C7F289CB90C00A61AC8 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		0C848C99289CCC0800A61AC8 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C848C98289CCC0800A61AC8 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

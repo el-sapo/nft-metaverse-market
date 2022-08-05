@@ -1,3 +1,32 @@
+query SearchGLBModels($search: String!, $collectionAddress: [String!])  {
+  search(pagination: {limit: 50}, query: {text: $search}, filter: {collectionAddresses: $collectionAddress}) {
+    nodes {
+      collectionAddress
+      entity {
+        ... on Token {
+          collectionName
+          tokenUrl
+          attributes {
+            traitType
+            value
+            displayType
+          }
+          description
+          metadata
+          content {
+            url
+          }
+          image {
+            url
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
 query GLBModels {
   search(pagination: {}, query: {text: "glb"}) {
     nodes {
@@ -24,32 +53,3 @@ query GLBModels {
     }
   }
 }
-
-
-query MyGLBModels {
-  search(pagination: {limit: 10}, query: {text: "3D"}, filter: {collectionAddresses: "0xF5335e9807712fAf0a7EE88760e8DF83FB37E05d"}) {
-    nodes {
-      collectionAddress
-      entity {
-        ... on Token {
-          collectionName
-          tokenUrl
-          attributes {
-            traitType
-            value
-            displayType
-          }
-          description
-          metadata
-          content {
-            url
-          }
-          image {
-            url
-          }
-        }
-      }
-    }
-  }
-}
-
