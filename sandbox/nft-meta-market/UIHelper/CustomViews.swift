@@ -25,3 +25,4 @@ struct CustomText_Previews: PreviewProvider {
         CustomText()
     }
 }
+

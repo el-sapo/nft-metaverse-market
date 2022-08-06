@@ -11,6 +11,7 @@
 		0C37E71C289AE79C00FB7918 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 0C37E71B289AE79C00FB7918 /* Apollo */; };
 		0C4AC51C289A22B600373378 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4AC51B289A22B600373378 /* UnityFramework.framework */; };
 		0C4AC51E289A23EC00373378 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4AC51B289A22B600373378 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0C6178AF289D9FC90023A597 /* MZoraSearchInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6178AE289D9FC90023A597 /* MZoraSearchInputView.swift */; };
 		0C848C7E289C9ACF00A61AC8 /* NFTStorageNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C848C7D289C9ACF00A61AC8 /* NFTStorageNetwork.swift */; };
 		0C848C81289CB90D00A61AC8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0C848C80289CB90D00A61AC8 /* Alamofire */; };
 		0C848C83289CB9FD00A61AC8 /* MSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C848C82289CB9FD00A61AC8 /* MSelectorView.swift */; };
@@ -24,6 +25,7 @@
 		0C848C93289CC95300A61AC8 /* MZoraSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C848C92289CC95300A61AC8 /* MZoraSearchViewModel.swift */; };
 		0C848C97289CCB2400A61AC8 /* MZoraRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C848C96289CCB2400A61AC8 /* MZoraRowView.swift */; };
 		0C848C9A289CCC0800A61AC8 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0C848C99289CCC0800A61AC8 /* SDWebImage */; };
+		0C848C9D289CCFBA00A61AC8 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0C848C9C289CCFBA00A61AC8 /* SDWebImageSwiftUI */; };
 		0CB93FB4289A358E00E21369 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB93FB3289A358E00E21369 /* GameViewController.swift */; };
 		0CB93FB6289A377400E21369 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB93FB5289A377400E21369 /* Game.storyboard */; };
 		0CF20F93289C2F4400D34A92 /* queries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 0CF20F92289C2F4400D34A92 /* queries.graphql */; };
@@ -62,6 +64,7 @@
 
 /* Begin PBXFileReference section */
 		0C4AC51B289A22B600373378 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C6178AE289D9FC90023A597 /* MZoraSearchInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZoraSearchInputView.swift; sourceTree = "<group>"; };
 		0C848C7D289C9ACF00A61AC8 /* NFTStorageNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTStorageNetwork.swift; sourceTree = "<group>"; };
 		0C848C82289CB9FD00A61AC8 /* MSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSelectorView.swift; sourceTree = "<group>"; };
 		0C848C84289CBA4D00A61AC8 /* MZoraSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZoraSearchView.swift; sourceTree = "<group>"; };
@@ -103,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C848C9D289CCFBA00A61AC8 /* SDWebImageSwiftUI in Frameworks */,
 				0C4AC51C289A22B600373378 /* UnityFramework.framework in Frameworks */,
 				0C848C81289CB90D00A61AC8 /* Alamofire in Frameworks */,
 				0C37E71C289AE79C00FB7918 /* Apollo in Frameworks */,
@@ -114,14 +118,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C37E71D289AEB8900FB7918 /* ModelScene */ = {
+		0C37E71D289AEB8900FB7918 /* 3dModelScene */ = {
 			isa = PBXGroup;
 			children = (
 				0CB93FB5289A377400E21369 /* Game.storyboard */,
 				0CB93FB3289A358E00E21369 /* GameViewController.swift */,
 				0CF20FA3289C342100D34A92 /* GameViewModel.swift */,
 			);
-			path = ModelScene;
+			path = 3dModelScene;
 			sourceTree = "<group>";
 		};
 		0C37E71E289AEBB100FB7918 /* UnityScene */ = {
@@ -149,6 +153,7 @@
 				0C848C84289CBA4D00A61AC8 /* MZoraSearchView.swift */,
 				0C848C92289CC95300A61AC8 /* MZoraSearchViewModel.swift */,
 				0C848C96289CCB2400A61AC8 /* MZoraRowView.swift */,
+				0C6178AE289D9FC90023A597 /* MZoraSearchInputView.swift */,
 			);
 			path = Zora;
 			sourceTree = "<group>";
@@ -227,14 +232,14 @@
 				E62A7ACF2773E4DA007CE3D6 /* SceneDelegate.swift */,
 				E6DE818625BA36230019BED1 /* ContentView.swift */,
 				0C37E71F289AEBC700FB7918 /* UIHelper */,
+				0C37E71E289AEBB100FB7918 /* UnityScene */,
+				0C37E71D289AEB8900FB7918 /* 3dModelScene */,
 				0CF20FA5289C351700D34A92 /* Marketplace */,
 				0CF20F9C289C32AF00D34A92 /* Data */,
 				0CF20F99289C320E00D34A92 /* Network */,
 				0CF20F97289C31D700D34A92 /* API.swift */,
 				0CF20F94289C2FEA00D34A92 /* schema.json */,
 				0CF20F92289C2F4400D34A92 /* queries.graphql */,
-				0C37E71E289AEBB100FB7918 /* UnityScene */,
-				0C37E71D289AEB8900FB7918 /* ModelScene */,
 				E6DE818825BA36240019BED1 /* Assets.xcassets */,
 				0CB93FB9289A3A5700E21369 /* guitar.glb */,
 				E6DE818D25BA36240019BED1 /* Info.plist */,
@@ -274,6 +279,7 @@
 				0C37E71B289AE79C00FB7918 /* Apollo */,
 				0C848C80289CB90D00A61AC8 /* Alamofire */,
 				0C848C99289CCC0800A61AC8 /* SDWebImage */,
+				0C848C9C289CCFBA00A61AC8 /* SDWebImageSwiftUI */,
 			);
 			productName = sandbox;
 			productReference = E6DE818125BA36230019BED1 /* nft-meta-market.app */;
@@ -307,6 +313,7 @@
 				0C37E71A289AE79C00FB7918 /* XCRemoteSwiftPackageReference "apollo-ios" */,
 				0C848C7F289CB90C00A61AC8 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				0C848C98289CCC0800A61AC8 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				0C848C9B289CCFB900A61AC8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = E6DE818225BA36230019BED1 /* Products */;
 			projectDirPath = "";
@@ -370,6 +377,7 @@
 				E62A7AD42773F6AC007CE3D6 /* UIWindowCustom.swift in Sources */,
 				E62A7ACE2773E48A007CE3D6 /* AppDelegate.swift in Sources */,
 				0C848C8F289CBFE400A61AC8 /* CustomViews.swift in Sources */,
+				0C6178AF289D9FC90023A597 /* MZoraSearchInputView.swift in Sources */,
 				0C848C7E289C9ACF00A61AC8 /* NFTStorageNetwork.swift in Sources */,
 				0C848C89289CBD4D00A61AC8 /* GameModel.swift in Sources */,
 				0C848C8D289CBD7600A61AC8 /* NFTupModel.swift in Sources */,
@@ -441,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -496,7 +504,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -600,6 +608,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		0C848C9B289CCFB900A61AC8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		0CD70C32289ADEC600EB16D4 /* XCRemoteSwiftPackageReference "GLTFSceneKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/magicien/GLTFSceneKit";
@@ -630,6 +646,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0C848C98289CCC0800A61AC8 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
+		};
+		0C848C9C289CCFBA00A61AC8 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C848C9B289CCFB900A61AC8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

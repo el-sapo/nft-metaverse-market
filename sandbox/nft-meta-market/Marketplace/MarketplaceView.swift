@@ -9,19 +9,29 @@ import SwiftUI
 
 struct MarketplaceView: View {
     @State var showMenuType: MarketType = .zora
-    @State var showSearch: Bool = true
+    @State var search: Bool = true
+    
+    let viewModel = MarketplaceViewModel()
+    
+    @Environment(\.presentationMode) var presentation
 
     var body: some View {
         VStack {
             MSelectorView(showMenu: $showMenuType,
-                          shouldSearch: $showSearch)
+                          search: $search)
+              .frame(height: 50.0, alignment: .center)
+              .onChange(of: search) { newValue in
+                  search.toggle()
+              }
             if showMenuType == .zora {
-                MZoraSearchView()
+                MZoraSearchView(showInputSearch: $search)
+                    .frame(maxHeight: .infinity, alignment: .top)
             }
             if showMenuType == .nftup {
                 MNFTupSearchView()
             }
-        }
+        }.frame(maxHeight: .infinity, alignment: .top)
+
         
     }
 }

@@ -19,6 +19,7 @@ class MarketplaceViewModel: ObservableObject {
     // open zora search by default
     @Published var showZoraSearch = true
     @Published var showNFTupSearch = false
+    @Published var showSearch = false
     
     func searchModels(search: String? = nil) {
         

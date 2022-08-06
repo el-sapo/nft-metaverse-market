@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+// Fonts
 extension Font {
     static func customFont(size: CGFloat, textStyle: Font.TextStyle) -> Font {
         switch textStyle {
@@ -22,3 +23,22 @@ extension Font {
         }
     }
 }
+
+// Animations
+extension AnyTransition {
+    static var moveAndFade: AnyTransition {
+        .asymmetric(
+            insertion: .move(edge: .top).combined(with: .opacity),
+            removal: .move(edge: .top)
+        )
+    }
+}
+
+extension Animation {
+    static func ripple(index: Int) -> Animation {
+            Animation.spring(dampingFraction: 0.5)
+                .speed(2)
+                .delay(0.03 * Double(index))
+        }
+}
+

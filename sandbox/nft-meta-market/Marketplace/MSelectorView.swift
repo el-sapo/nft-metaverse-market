@@ -12,24 +12,24 @@ import Combine
 struct MSelectorView: View {
     let corners = 7.0
     @Binding var showMenu: MarketType
-    @Binding var shouldSearch: Bool
+    @Binding var search: Bool
 
     var body: some View {
         HStack {
             Button {
                 // action
                 showMenu = .zora
-                shouldSearch = true
+                search.toggle()
             } label: {
                 Image("zora")
                     .resizable()
                     .scaledToFit()
+                    .padding(.vertical, 5.0)
             }
-            .background(
-                RoundedRectangle(cornerRadius: corners)
-                    .foregroundColor(.white)
-            )
-            Spacer(minLength: 20.0)
+            .background(Color.white)
+            .frame(maxWidth: .infinity, alignment: .center)
+
+            Spacer(minLength: 10.0)
             Button {
                 // action
                 showMenu = .nftup
@@ -38,10 +38,8 @@ struct MSelectorView: View {
                     .resizable()
                     .scaledToFit()
             }
-            .background(
-                RoundedRectangle(cornerRadius: corners)
-                    .foregroundColor(.red)
-            )
+            .background(Color.red)
+            .frame(maxWidth: .infinity, alignment: .center)
         }
     }
 }
@@ -49,6 +47,6 @@ struct MSelectorView: View {
 struct MSelectorView_Previews: PreviewProvider {
     static var previews: some View {
         MSelectorView(showMenu: .constant(.zora),
-                      shouldSearch: .constant(true))
+                      search: .constant(true))
     }
 }
