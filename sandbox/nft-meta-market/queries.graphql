@@ -1,5 +1,5 @@
-query SearchGLBModels($search: String!, $collectionAddress: [String!])  {
-  search(pagination: {limit: 50}, query: {text: $search}, filter: {collectionAddresses: $collectionAddress}) {
+query SearchGLBCollectionModels($search: String!, $collectionAddress: String!)  {
+  search(pagination: {limit: 50}, query: {text: $search}, filter: {collectionAddresses: [$collectionAddress]}) {
     nodes {
       collectionAddress
       entity {
@@ -25,7 +25,59 @@ query SearchGLBModels($search: String!, $collectionAddress: [String!])  {
   }
 }
 
+query SearchGLBModels($search: String!)  {
+  search(pagination: {limit: 50}, query: {text: $search}) {
+    nodes {
+      collectionAddress
+      entity {
+        ... on Token {
+          collectionName
+          tokenUrl
+          attributes {
+            traitType
+            value
+            displayType
+          }
+          description
+          metadata
+          content {
+            url
+          }
+          image {
+            url
+          }
+        }
+      }
+    }
+  }
+}
 
+query MockSearchGLBModels  {
+  search(pagination: {limit: 50}, query: {text: "wp 3d models"}) {
+    nodes {
+      collectionAddress
+      entity {
+        ... on Token {
+          collectionName
+          tokenUrl
+          attributes {
+            traitType
+            value
+            displayType
+          }
+          description
+          metadata
+          content {
+            url
+          }
+          image {
+            url
+          }
+        }
+      }
+    }
+  }
+}
 
 query GLBModels {
   search(pagination: {}, query: {text: "glb"}) {
