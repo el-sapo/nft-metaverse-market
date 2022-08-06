@@ -9,4 +9,5 @@ import Foundation
 
 struct GameModel {
     let glbUrl: String
+    let storeUrl: String?
 }

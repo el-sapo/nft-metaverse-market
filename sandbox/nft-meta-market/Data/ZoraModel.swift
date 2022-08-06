@@ -23,12 +23,12 @@ extension ZoraModel {
         self.description = description
         self.collectionName = collectionName
         self.imageUrl = imageUrl
-        self.gameModel = GameModel(glbUrl: gameModelUrl)
+        self.gameModel = GameModel(glbUrl: gameModelUrl, storeUrl: nil)
     }
     
     // Metadata for 3D models is not standarized so this could change.
     // This metadata structure follows Manifold contracts for 3D models
-    init(id: Int, items: [String: Any], collection: String?) {
+    init(id: Int, items: [String: Any], collection: String?, collectionAddress: String?, tokenId: String?) {
         var title = ""
         var desc = ""
         var image = ""
@@ -49,6 +49,10 @@ extension ZoraModel {
         self.description = desc
         self.imageUrl = image
         self.collectionName = collection ?? ""
-        self.gameModel = GameModel(glbUrl: gameUrl)
+        var storeUrl: String? = nil
+        if let collectionAddress = collectionAddress, let tokenId = tokenId {
+            storeUrl = "https://opensea.io/assets/ethereum/" + collectionAddress + "/" + tokenId
+        }
+        self.gameModel = GameModel(glbUrl: gameUrl, storeUrl: storeUrl)
     }
 }

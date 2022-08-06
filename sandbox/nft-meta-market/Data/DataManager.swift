@@ -8,10 +8,18 @@
 import Foundation
 import Combine
 
-class DataManager {
+class DataManager: ObservableObject {
     // create shared instance
     static let shared = DataManager()
 
+    @Published var gameModel: GameModel? = nil
+    
+    init() {
+        NotificationCenter.default.addObserver(forName: NavigationName.game, object: nil, queue: nil) { [weak self] notification in
+            self?.gameModel = notification.userInfo?["model"] as? GameModel
+        }
+    }
+    
     // set list of observers to handle responses from Network class
     var observers: [AnyCancellable] = []
     

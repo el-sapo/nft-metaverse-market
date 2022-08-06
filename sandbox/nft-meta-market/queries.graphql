@@ -19,6 +19,8 @@ query SearchGLBCollectionModels($search: String!, $collectionAddress: String!)  
           image {
             url
           }
+          tokenId
+          collectionAddress
         }
       }
     }
@@ -46,6 +48,8 @@ query SearchGLBModels($search: String!)  {
           image {
             url
           }
+          tokenId
+          collectionAddress
         }
       }
     }
@@ -53,7 +57,7 @@ query SearchGLBModels($search: String!)  {
 }
 
 query MockSearchGLBModels  {
-  search(pagination: {limit: 50}, query: {text: "wp 3d models"}) {
+  search(pagination: {limit: 50}, query: {text: "3d"}, filter: {collectionAddresses: ["fede3.eth"]}) {
     nodes {
       collectionAddress
       entity {
@@ -73,6 +77,8 @@ query MockSearchGLBModels  {
           image {
             url
           }
+          tokenId
+          collectionAddress
         }
       }
     }

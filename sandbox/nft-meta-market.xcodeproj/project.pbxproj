@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C22A439289E168100921E8C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C22A438289E168100921E8C /* ContentViewModel.swift */; };
 		0C37E719289AE10300FB7918 /* GLTFSceneKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0C37E718289AE10300FB7918 /* GLTFSceneKit */; };
 		0C37E71C289AE79C00FB7918 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 0C37E71B289AE79C00FB7918 /* Apollo */; };
 		0C4AC51C289A22B600373378 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4AC51B289A22B600373378 /* UnityFramework.framework */; };
 		0C4AC51E289A23EC00373378 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4AC51B289A22B600373378 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0C6178AF289D9FC90023A597 /* MZoraSearchInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6178AE289D9FC90023A597 /* MZoraSearchInputView.swift */; };
+		0C617919289E06B40023A597 /* GameMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C617918289E06B40023A597 /* GameMenuView.swift */; };
 		0C848C7E289C9ACF00A61AC8 /* NFTStorageNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C848C7D289C9ACF00A61AC8 /* NFTStorageNetwork.swift */; };
 		0C848C81289CB90D00A61AC8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0C848C80289CB90D00A61AC8 /* Alamofire */; };
 		0C848C83289CB9FD00A61AC8 /* MSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C848C82289CB9FD00A61AC8 /* MSelectorView.swift */; };
@@ -63,8 +65,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0C22A438289E168100921E8C /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		0C4AC51B289A22B600373378 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C6178AE289D9FC90023A597 /* MZoraSearchInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZoraSearchInputView.swift; sourceTree = "<group>"; };
+		0C617918289E06B40023A597 /* GameMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMenuView.swift; sourceTree = "<group>"; };
 		0C848C7D289C9ACF00A61AC8 /* NFTStorageNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTStorageNetwork.swift; sourceTree = "<group>"; };
 		0C848C82289CB9FD00A61AC8 /* MSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSelectorView.swift; sourceTree = "<group>"; };
 		0C848C84289CBA4D00A61AC8 /* MZoraSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZoraSearchView.swift; sourceTree = "<group>"; };
@@ -231,6 +235,8 @@
 				E62A7ACD2773E48A007CE3D6 /* AppDelegate.swift */,
 				E62A7ACF2773E4DA007CE3D6 /* SceneDelegate.swift */,
 				E6DE818625BA36230019BED1 /* ContentView.swift */,
+				0C22A438289E168100921E8C /* ContentViewModel.swift */,
+				0C617918289E06B40023A597 /* GameMenuView.swift */,
 				0C37E71F289AEBC700FB7918 /* UIHelper */,
 				0C37E71E289AEBB100FB7918 /* UnityScene */,
 				0C37E71D289AEB8900FB7918 /* 3dModelScene */,
@@ -384,11 +390,13 @@
 				0CF20F9E289C32C400D34A92 /* ModelHelpers.swift in Sources */,
 				E6DE818725BA36230019BED1 /* ContentView.swift in Sources */,
 				0C848C93289CC95300A61AC8 /* MZoraSearchViewModel.swift in Sources */,
+				0C617919289E06B40023A597 /* GameMenuView.swift in Sources */,
 				0CF20FAB289C354E00D34A92 /* MarketplaceViewModel.swift in Sources */,
 				0C848C83289CB9FD00A61AC8 /* MSelectorView.swift in Sources */,
 				0C848C97289CCB2400A61AC8 /* MZoraRowView.swift in Sources */,
 				0CF20F9B289C321F00D34A92 /* ZONetwork.swift in Sources */,
 				0C848C87289CBA6300A61AC8 /* MNFTupSearchView.swift in Sources */,
+				0C22A439289E168100921E8C /* ContentViewModel.swift in Sources */,
 				E61361FE25BA3D150005B57A /* UnityBridge.swift in Sources */,
 				0CF20F98289C31D700D34A92 /* API.swift in Sources */,
 				0C848C8B289CBD6700A61AC8 /* ZoraModel.swift in Sources */,

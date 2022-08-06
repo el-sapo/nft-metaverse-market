@@ -12,21 +12,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             // This is done automatically when not using an `App`.
             let vc = UIHostingController(rootView: ContentView())
             
-            /*
-            if let gameViewController = UIStoryboard(name: "Game", bundle: Bundle.main)
-                .instantiateViewController(identifier: "GameViewController") as? GameViewController
-            {
-                vc.addChild(gameViewController)
-                gameViewController.view.frame = vc.view.frame
-                            // Add the child’s view to main view, along with any Auto Layout constraints.
-                vc.view.addSubview(gameViewController.view)
-                gameViewController.didMove(toParent: vc)
-            } else {
-                print("Wrong initialization gameViewController")
-            }
-            
-            */
-            
             // Sets the UIHostingView to transparent so we can see
             // the Unity window behind it.
             vc.view.isOpaque = false
@@ -39,11 +24,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             self.window!.rootViewController = vc
 
             self.window!.makeKeyAndVisible()
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
-                //self.viewCoordinator?.showGameVC()
-                self.viewCoordinator?.showMarketplaceVC()
-            })
         }
     }
 

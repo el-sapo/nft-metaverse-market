@@ -54,6 +54,6 @@ struct MZoraRowView: View {
 
 struct MZoraRowView_Previews: PreviewProvider {
     static var previews: some View {
-        MZoraRowView(item: ZoraModel(id: 1, items: [:], collection: nil))
+        MZoraRowView(item: ZoraModel(id: 1, items: [:], collection: nil, collectionAddress: nil, tokenId: nil))
     }
 }

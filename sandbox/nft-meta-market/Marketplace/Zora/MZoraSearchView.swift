@@ -16,13 +16,21 @@ struct MZoraSearchView: View {
     @Binding var showInputSearch: Bool
 
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
+            Divider()
             if showInputSearch {
                 MZoraSearchInputView(searchModel: $searchModel, inputCompletion: { newSearch in
                     showInputSearch = false
                     viewModel.searchItems(text: newSearch.text ?? "", collectionAddress: newSearch.collection ?? "")
                 })
-                    .animation(.ripple(index: 0))
+                .padding(.horizontal, 30.0)
+                .padding(.vertical, 10.0)
+                .animation(.ripple(index: 0))
+            }
+            if viewModel.loading {
+                ProgressView()
+                CustomText(text: "Loading...", size: 12.0, textStyle: .body)
+                    .foregroundColor(.gray)
             }
             List(viewModel.searchItems) { searchItem in
                 MZoraRowView(item: searchItem)
@@ -32,10 +40,7 @@ struct MZoraSearchView: View {
                         }
                     }
             }
-        }.background(
-            RoundedRectangle(cornerRadius: 7)
-                .background(Color.white)
-        )
+        }
     }
 }
 

@@ -17,35 +17,48 @@ struct MZoraSearchInputView: View {
 
     @State var collection: String = ""
     @State var text: String = ""
+    @State var curated: Bool = false
     
-    var inputCollection = false
+    var inputCollection = true
     var inputCompletion: ((SearchModel)->())?
     
     var body: some View {
         VStack {
             if inputCollection {
-                TextField("search collection", text: $text)
-                    .frame(height: 35.0, alignment: .leading)
-                    .padding(.horizontal, 20.0)
-                    .padding(.vertical, 5.0)
+                Toggle("Curated Collections", isOn: $curated)
+                    .shadow(color: .gray, radius: 4)
+                    .toggleStyle(SwitchToggleStyle(tint: .purple))
+                    .font(Font.customFont(size: 12.0, textStyle: .title2))
+                    .frame(width: 150, alignment: .center)
+                    .padding(.vertical, 10.0)
             }
-            TextField("search words", text: $collection)
+            TextField("search words", text: $text)
+                .multilineTextAlignment(.center)
                 .font(Font.customFont(size: 17.0, textStyle: .title2))
-                .frame(height: 35.0, alignment: .leading)
+                .frame(height: 35.0, alignment: .center)
                 .padding(.horizontal, 20.0)
-                .padding(.vertical, 5.0)
+            Divider()
             Button {
                 searchModel = SearchModel(text: text, collection: collection)
                 self.inputCompletion?(searchModel)
             } label: {
-                CustomText(text: "Search", size: 17.0)
-                    .frame(height: 35.0, alignment: .center)
-                    .shadow(color: .gray, radius: 7)
+                if #available(iOS 15.0, *) {
+                    CustomText(text: "Search 3D models", size: 17.0)
+                        .frame(height: 35.0)
+                        .frame(maxWidth: .infinity, alignment: .center)
+                        .foregroundColor(.purple)
+                        .shadow(color: .gray, radius: 4)
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 7.0).stroke(.purple, lineWidth: 2)
+                        }
+                } else {
+                    CustomText(text: "Search 3D models", size: 17.0)
+                        .frame(height: 35.0, alignment: .center)
+                        .foregroundColor(.purple)
+                        .shadow(color: .gray, radius: 7)
+                }
             }
-        }.background(
-            RoundedRectangle(cornerRadius: 7.0)
-                .foregroundColor(Color.yellow)
-        )
+        }.background(Color.white)
     }
 }
 

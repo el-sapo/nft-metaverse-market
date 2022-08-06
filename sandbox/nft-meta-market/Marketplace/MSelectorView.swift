@@ -16,6 +16,9 @@ struct MSelectorView: View {
 
     var body: some View {
         HStack {
+            Spacer()
+                CustomText(text: "powered by", size: 12.0, textStyle: .body)
+                    .frame(alignment: .bottom)
             Button {
                 // action
                 showMenu = .zora
@@ -27,19 +30,7 @@ struct MSelectorView: View {
                     .padding(.vertical, 5.0)
             }
             .background(Color.white)
-            .frame(maxWidth: .infinity, alignment: .center)
-
-            Spacer(minLength: 10.0)
-            Button {
-                // action
-                showMenu = .nftup
-            } label: {
-                Image("nftstorage")
-                    .resizable()
-                    .scaledToFit()
-            }
-            .background(Color.red)
-            .frame(maxWidth: .infinity, alignment: .center)
+            Spacer()
         }
     }
 }

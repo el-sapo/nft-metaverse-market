@@ -31,7 +31,11 @@ public class ZONetwork {
                                 // JSON deserializer crashes with some contents in metadata, so we have to do it manually
                                 switch asToken.metadata {
                                     case .dictionary(let metadata):
-                                    let model = ZoraModel(id: i, items: metadata, collection: asToken.collectionName)
+                                    let model = ZoraModel(id: i,
+                                                          items: metadata,
+                                                          collection: asToken.collectionName,
+                                                          collectionAddress: asToken.collectionAddress,
+                                                          tokenId: asToken.tokenId)
                                         resultModels.append(model)
                                         i+=1
                                     case .array(_):
@@ -72,7 +76,11 @@ public class ZONetwork {
                                 // JSON deserializer crashes with some contents in metadata, so we have to do it manually
                                 switch asToken.metadata {
                                     case .dictionary(let metadata):
-                                    let model = ZoraModel(id: i, items: metadata, collection: asToken.collectionName)
+                                    let model = ZoraModel(id: i,
+                                                          items: metadata,
+                                                          collection: asToken.collectionName,
+                                                          collectionAddress: asToken.collectionAddress,
+                                                          tokenId: asToken.tokenId)
                                         resultModels.append(model)
                                         i+=1
                                     case .array(_):

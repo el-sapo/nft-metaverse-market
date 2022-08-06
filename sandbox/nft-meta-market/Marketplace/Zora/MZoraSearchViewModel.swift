@@ -10,10 +10,20 @@ import Combine
 
 class MZoraSearchViewModel: ObservableObject {
     @Published var searchItems: [ZoraModel] = []
-
+    @Published var loading: Bool = false
+    
     var observers: [AnyCancellable] = []
 
+    init() {
+        NotificationCenter.default.addObserver(forName: NavigationName.game, object: nil, queue: nil) { [weak self] notification in
+            self?.searchItems = []
+            self?.loading = true
+        }
+    }
+    
     func searchItems(text: String = "", collectionAddress: String = "") {
+        searchItems = []
+        loading = true
         DataManager.shared.fetchSearchZoraModels(search: text, collection: collectionAddress)
             .sink { result in
                 switch result {
@@ -24,6 +34,7 @@ class MZoraSearchViewModel: ObservableObject {
                 }
             } receiveValue: { [weak self] searchResults in
                 self?.searchItems = searchResults
+                self?.loading = false
             }.store(in: &observers)
     }
 }
