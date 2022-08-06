@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0C22A439289E168100921E8C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C22A438289E168100921E8C /* ContentViewModel.swift */; };
+		0C22A43E289E306D00921E8C /* SwiftfulLoadingIndicators in Frameworks */ = {isa = PBXBuildFile; productRef = 0C22A43D289E306D00921E8C /* SwiftfulLoadingIndicators */; };
 		0C37E719289AE10300FB7918 /* GLTFSceneKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0C37E718289AE10300FB7918 /* GLTFSceneKit */; };
 		0C37E71C289AE79C00FB7918 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 0C37E71B289AE79C00FB7918 /* Apollo */; };
 		0C4AC51C289A22B600373378 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4AC51B289A22B600373378 /* UnityFramework.framework */; };
@@ -110,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C22A43E289E306D00921E8C /* SwiftfulLoadingIndicators in Frameworks */,
 				0C848C9D289CCFBA00A61AC8 /* SDWebImageSwiftUI in Frameworks */,
 				0C4AC51C289A22B600373378 /* UnityFramework.framework in Frameworks */,
 				0C848C81289CB90D00A61AC8 /* Alamofire in Frameworks */,
@@ -286,6 +288,7 @@
 				0C848C80289CB90D00A61AC8 /* Alamofire */,
 				0C848C99289CCC0800A61AC8 /* SDWebImage */,
 				0C848C9C289CCFBA00A61AC8 /* SDWebImageSwiftUI */,
+				0C22A43D289E306D00921E8C /* SwiftfulLoadingIndicators */,
 			);
 			productName = sandbox;
 			productReference = E6DE818125BA36230019BED1 /* nft-meta-market.app */;
@@ -320,6 +323,7 @@
 				0C848C7F289CB90C00A61AC8 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				0C848C98289CCC0800A61AC8 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				0C848C9B289CCFB900A61AC8 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				0C22A43C289E306D00921E8C /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */,
 			);
 			productRefGroup = E6DE818225BA36230019BED1 /* Products */;
 			projectDirPath = "";
@@ -592,6 +596,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0C22A43C289E306D00921E8C /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulLoadingIndicators.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.4;
+			};
+		};
 		0C37E71A289AE79C00FB7918 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
@@ -635,6 +647,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0C22A43D289E306D00921E8C /* SwiftfulLoadingIndicators */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C22A43C289E306D00921E8C /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */;
+			productName = SwiftfulLoadingIndicators;
+		};
 		0C37E718289AE10300FB7918 /* GLTFSceneKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0CD70C32289ADEC600EB16D4 /* XCRemoteSwiftPackageReference "GLTFSceneKit" */;

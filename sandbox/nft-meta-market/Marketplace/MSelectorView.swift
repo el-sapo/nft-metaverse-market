@@ -19,6 +19,8 @@ struct MSelectorView: View {
             Spacer()
                 CustomText(text: "powered by", size: 12.0, textStyle: .body)
                     .frame(alignment: .bottom)
+                    .foregroundColor(.purple)
+                    .padding(EdgeInsets(top: 20.0, leading: 0.0, bottom: 0.0, trailing: 0.0))
             Button {
                 // action
                 showMenu = .zora

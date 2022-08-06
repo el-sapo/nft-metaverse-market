@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftfulLoadingIndicators
 
 struct MZoraSearchView: View {
     @StateObject var viewModel: MZoraSearchViewModel = MZoraSearchViewModel()
@@ -28,9 +29,10 @@ struct MZoraSearchView: View {
                 .animation(.ripple(index: 0))
             }
             if viewModel.loading {
-                ProgressView()
-                CustomText(text: "Loading...", size: 12.0, textStyle: .body)
-                    .foregroundColor(.gray)
+                Spacer()
+                LoadingIndicator(animation: .heart, color: .purple, size: .small, speed: .normal)
+                LoadingIndicator(animation: .text, color: .purple, size: .large, speed: .fast)
+                Spacer()
             }
             List(viewModel.searchItems) { searchItem in
                 MZoraRowView(item: searchItem)

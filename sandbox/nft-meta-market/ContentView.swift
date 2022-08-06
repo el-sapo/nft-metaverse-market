@@ -17,19 +17,6 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             // PassthroughView()
-            ColorPicker("", selection: $color)
-                .frame(width: 50, height: 50)
-                .frame(maxWidth:.infinity, alignment: .trailing)
-                .onChange(of: color) { newValue in
-                    let colorString = "\(newValue)"
-                    let arr = colorString.components(separatedBy: " ")
-                    if arr.count > 1 {
-                        let r = CGFloat(Float(arr[1]) ?? 1)
-                        let g = CGFloat(Float(arr[2]) ?? 1)
-                        let b = CGFloat(Float(arr[3]) ?? 1)
-                        UnityBridge.getInstance().api.setColor(r: r, g: g, b: b)
-                    }
-                }
             if !viewModel.hideMenu {
                 VStack {
                     Spacer()

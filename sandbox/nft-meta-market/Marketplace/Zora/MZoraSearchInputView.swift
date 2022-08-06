@@ -32,7 +32,7 @@ struct MZoraSearchInputView: View {
                     .frame(width: 150, alignment: .center)
                     .padding(.vertical, 10.0)
             }
-            TextField("search words", text: $text)
+            TextField("input title or desciption", text: $text)
                 .multilineTextAlignment(.center)
                 .font(Font.customFont(size: 17.0, textStyle: .title2))
                 .frame(height: 35.0, alignment: .center)
