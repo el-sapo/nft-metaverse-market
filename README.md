@@ -35,5 +35,9 @@ Instalation instructions (XCode):
 https://www.apollographql.com/docs/ios/installation
 
 ### Metadata
-Metadata for NFTs is still being standarized for different types of media files. Specifically for 3D model files, there is no standard defined. This makes it very difficult to parse this data and also query for this type of files. For this app I followed the Manifold metadata standard structure for GLB files
+Metadata for NFTs is still being standarized for different types of media files. Specifically for 3D model files, there is no standard defined. This makes it very difficult to parse this data and also query for this type of files. For this app I followed the Manifold metadata standard structure for GLB files.
+Here you can see an example:
 
+
+
+<img width="772" alt="Screen Shot 2022-08-07 at 11 25 10" src="https://user-images.githubusercontent.com/104182252/183295710-5f21ad81-d13f-4a1f-aa50-85728bcb8fab.png">
