@@ -18,7 +18,7 @@ class ContentViewModel: ObservableObject {
             self?.hideMenu = false
         }
         NotificationCenter.default.addObserver(forName: NavigationName.marketplace, object: nil, queue: nil) { [weak self] notification in
-            self?.hideMenu = true
+//            self?.hideMenu = true
         }
         _ = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(startMenu), userInfo: nil, repeats: false)
 
