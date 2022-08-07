@@ -24,7 +24,7 @@ struct MZoraSearchView: View {
                     showInputSearch = false
                     var searchText = newSearch.text ?? ""
                     if searchText.count == 0 {
-                        searchText = "3d"
+                        searchText = "glb"
                     }
                     viewModel.searchItems(text: searchText, curated: searchModel.curated)
                 })
