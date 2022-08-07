@@ -1,4 +1,5 @@
 # nft-metaverse-market
+![meta-market-low](https://user-images.githubusercontent.com/104182252/183294676-c8bf5065-0f62-435a-a224-c8ae182a820d.gif)
 
 ## Introduction
 This native iOS/Mac allows metaverse and game builders to offer an open and decentralized marketplace of 3D model NFTs so that users can try out and purchase. 
