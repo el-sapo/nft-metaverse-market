@@ -2,7 +2,7 @@
 ![meta-market-low](https://user-images.githubusercontent.com/104182252/183294676-c8bf5065-0f62-435a-a224-c8ae182a820d.gif)
 
 ## Introduction
-This native iOS/Mac allows metaverse and game builders to offer an open and decentralized marketplace of 3D model NFTs so that users can try out and purchase. 
+This native iOS/Mac app allows metaverse and game builders to offer an open and decentralized marketplace of 3D model NFTs so that users can try out the models live in their game scenes and purchase. 
 Why native? Building native apps allows for a better user experience and gives more control for developers over system resources and OS specific apis. This is very important for gaming applications.
 However, web3 and native apps do not work well. Infrastructure to connect and interact with the blockchain when doing mobile apps is lacking and UX is poor. This also results on very few native projects being built. Zora api is a great tool to bridge that gap, as it gives tools to query and access the blockchain without the need of directly connecting to it. 
 The intention of this project is also to offer other native devs code and tools to deploy their own Zora powered marketplaces on their native apps, to encourage native buidling. Web3 needs more native experiences to gain mainstream adoption
@@ -36,8 +36,7 @@ https://www.apollographql.com/docs/ios/installation
 
 ### Metadata
 Metadata for NFTs is still being standarized for different types of media files. Specifically for 3D model files, there is no standard defined. This makes it very difficult to parse this data and also query for this type of files. For this app I followed the Manifold metadata standard structure for GLB files.
+For this reason I added the "curated collections" switch in the search, so that you can direct searches to colletions that have a defined metadata stnadard that is compatible
 Here you can see an example:
-
-
 
 <img width="772" alt="Screen Shot 2022-08-07 at 11 25 10" src="https://user-images.githubusercontent.com/104182252/183295710-5f21ad81-d13f-4a1f-aa50-85728bcb8fab.png">
