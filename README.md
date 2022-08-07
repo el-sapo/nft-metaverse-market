@@ -22,7 +22,6 @@ The native code developerd is inside the sandbox fodler
 ### Architecture
 All iOS/Mac code is developed in Swift using SwiftUI and UIKit. There are 3 layers to the app. The Unity layer that displays the game, a SceneKit layer to display the 3D rendered models and a SwiftUI layer with the marketplace code
 
-
 ### Package Dependencies
 To get ful details on how to integrate a Unity project into XCode follow these instructions:
 https://github.com/DavidPeicho/unity-swiftui-example
@@ -34,3 +33,7 @@ iOS SceneKit does not support natively loading GLB files, so GLTFSceneKit packag
 * APOLLO: For communication with ZORA GraphQL api, Apollo client was used
 Instalation instructions (XCode):
 https://www.apollographql.com/docs/ios/installation
+
+### Metadata
+Metadata for NFTs is still being standarized for different types of media files. Specifically for 3D model files, there is no standard defined. This makes it very difficult to parse this data and also query for this type of files. For this app I followed the Manifold metadata standard structure for GLB files
+
