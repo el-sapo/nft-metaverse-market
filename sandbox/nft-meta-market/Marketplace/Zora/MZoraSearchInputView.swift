@@ -10,14 +10,14 @@ import SwiftUI
 struct SearchModel: Equatable {
     var text: String?
     var collection: String?
+    var curated: Bool = false
 }
 
 struct MZoraSearchInputView: View {
     @Binding var searchModel: SearchModel
 
-    @State var collection: String = ""
     @State var text: String = ""
-    @State var curated: Bool = false
+    @State var curated: Bool
     
     var inputCollection = true
     var inputCompletion: ((SearchModel)->())?
@@ -39,7 +39,7 @@ struct MZoraSearchInputView: View {
                 .padding(.horizontal, 20.0)
             Divider()
             Button {
-                searchModel = SearchModel(text: text, collection: collection)
+                searchModel = SearchModel(text: text, collection: "", curated: curated)
                 self.inputCompletion?(searchModel)
             } label: {
                 if #available(iOS 15.0, *) {
@@ -64,6 +64,6 @@ struct MZoraSearchInputView: View {
 
 struct MZoraSearchInputView_Previews: PreviewProvider {
     static var previews: some View {
-        MZoraSearchInputView(searchModel: .constant(SearchModel()))
+        MZoraSearchInputView(searchModel: .constant(SearchModel()), curated: false)
     }
 }

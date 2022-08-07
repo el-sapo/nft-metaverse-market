@@ -13,13 +13,13 @@ extension Font {
     static func customFont(size: CGFloat, textStyle: Font.TextStyle) -> Font {
         switch textStyle {
         case .footnote:
-            return Font.custom("AmericanTypewriter-Light", size: size, relativeTo: textStyle)
+            return Font.custom("Thonburi-Light ", size: size, relativeTo: textStyle)
         case .title2:
-            return Font.custom("AmericanTypewriter-SemiBold", size: size, relativeTo: textStyle)
+            return Font.custom("Thonburi", size: size, relativeTo: textStyle)
         case .title:
-            return Font.custom("AmericanTypewriter-Bold", size: size, relativeTo: textStyle)
+            return Font.custom("Thonburi-Bold", size: size, relativeTo: textStyle)
         default:
-            return Font.custom("American Typewriter", size: size, relativeTo: textStyle)
+            return Font.custom("Thonburi-Light", size: size, relativeTo: textStyle)
         }
     }
 }

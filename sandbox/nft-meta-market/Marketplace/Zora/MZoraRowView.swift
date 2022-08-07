@@ -17,10 +17,6 @@ struct MZoraRowView: View {
                 WebImage(url: URL(string: item.imageUrl ?? ""), options: .delayPlaceholder)
                     .resizable()
                     .placeholder(Image("zora"))
-                // Supports ViewBuilder as well
-                //.placeholder {
-                //     Circle().foregroundColor(.gray)
-                // }
                     .indicator(.activity) // Activity Indicator
                     .transition(.fade(duration: 0.5)) // Fade Transition with duration
                     .scaledToFit()
@@ -44,7 +40,7 @@ struct MZoraRowView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 7.0))
             }
             VStack {
-                CustomText(text: item.title, size: 17.0, textStyle: .title2)
+                CustomText(text: item.title, size: 18.0, textStyle: .title)
                 CustomText(text: item.description, size: 14.0, textStyle: .title2)
             }
             

@@ -11,6 +11,7 @@ import Combine
 class MZoraSearchViewModel: ObservableObject {
     @Published var searchItems: [ZoraModel] = []
     @Published var loading: Bool = false
+    @Published var errorMessage: String? = nil
     
     var observers: [AnyCancellable] = []
 
@@ -21,16 +22,19 @@ class MZoraSearchViewModel: ObservableObject {
         }
     }
     
-    func searchItems(text: String = "", collectionAddress: String = "") {
+    func searchItems(text: String = "", curated: Bool = false) {
         searchItems = []
         loading = true
-        DataManager.shared.fetchSearchZoraModels(search: text, collection: collectionAddress)
-            .sink { result in
+        errorMessage = nil
+        DataManager.shared.fetchSearchZoraModels(search: text, curated: curated)
+            .sink { [weak self] result in
                 switch result {
                 case .finished:
                     debugPrint("finished")
                 case .failure(let error):
                     print(error)
+                    self?.loading = false
+                    self?.errorMessage = error.localizedDescription
                 }
             } receiveValue: { [weak self] searchResults in
                 self?.searchItems = searchResults
