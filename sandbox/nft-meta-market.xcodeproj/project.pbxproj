@@ -124,6 +124,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C30558A28A00D8B0010E25F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E6DE818625BA36230019BED1 /* ContentView.swift */,
+				0C22A438289E168100921E8C /* ContentViewModel.swift */,
+				0C617918289E06B40023A597 /* GameMenuView.swift */,
+				0C37E71E289AEBB100FB7918 /* UnityScene */,
+				0C37E71D289AEB8900FB7918 /* 3dModelScene */,
+				0CF20FA5289C351700D34A92 /* Marketplace */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		0C37E71D289AEB8900FB7918 /* 3dModelScene */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,13 +249,8 @@
 				E61361FB25BA3CFA0005B57A /* LaunchScreen.storyboard */,
 				E62A7ACD2773E48A007CE3D6 /* AppDelegate.swift */,
 				E62A7ACF2773E4DA007CE3D6 /* SceneDelegate.swift */,
-				E6DE818625BA36230019BED1 /* ContentView.swift */,
-				0C22A438289E168100921E8C /* ContentViewModel.swift */,
-				0C617918289E06B40023A597 /* GameMenuView.swift */,
+				0C30558A28A00D8B0010E25F /* Screens */,
 				0C37E71F289AEBC700FB7918 /* UIHelper */,
-				0C37E71E289AEBB100FB7918 /* UnityScene */,
-				0C37E71D289AEB8900FB7918 /* 3dModelScene */,
-				0CF20FA5289C351700D34A92 /* Marketplace */,
 				0CF20F9C289C32AF00D34A92 /* Data */,
 				0CF20F99289C320E00D34A92 /* Network */,
 				0CF20F97289C31D700D34A92 /* API.swift */,
